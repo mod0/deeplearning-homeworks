@@ -1,0 +1,17 @@
+Homework2CNN.ipynb                 : IPython notebook for convolutional neural network
+Homework2Q1a.ipynb                 : IPython notebook for Q1 part 1: Replace sigmoid with Relu
+homework2q1a.py                    : Python script for Q1 part 1: Replace sigmoid with Relu    
+Homework2Q1b.ipynb                 : IPython notebook for Q1 part 2: Replace sigmoid with Relu + dropouts
+homework2q1b.py                    : Python script for Q1 part 2: Replace sigmoid with Relu + dropouts   
+Homework2Q1c.ipynb                 : IPython notebook for Q1 part 2: Setup dropouts in layer 2
+homework2q1c.py                    : Python script for Q1 part 2:  Setup dropouts in layer 2
+homework2qcnn_cifar100.py          : Python script for CIFAR100 (Convolutional Neural Network)
+homework2qcnn_mnist.py             : Python script for MNIST (Convolutional Neural Network)
+homework2qrnn_gru.py               : Python script for GRU (Recurrent Neural Network) 
+Homework2QRNN.ipynb                : IPython notebook for convolutional neural network
+homework2qrnn_lstm.py              : Python script for LSTM (Recurrent Neural Network) 
+homework2qrnn_vanillarnn.py        : Python script for Vanilla RNN (Recurrent Neural Network) 
+test_homework2q1a.py               : Python test script for Q1 part 1: Replace sigmoid with Relu     
+test_homework2q1b.py               : Python test script for Q1 part 2: Replace sigmoid with Relu + dropouts
+test_homework2q1c.py               : Python test script for Q1 part 3: Setup dropouts in layer 2
+

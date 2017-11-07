@@ -8,6 +8,22 @@ sentiment["negative"] = 0
 
 def read_word_vectors(filename):
     if os.path.isfile(filename):
+        # TODO: Change this Raphael
+        # See below I am creating a dictionary right?
+        # In the dictionary I am storing:
+        # the word as the key
+        # and the array of word vector as value for easy retrieval
+        # Instead of that you need to create the following two lists
+        # 1) a mapping (dictionary) from word to the index in the array at which you saw it,
+        # for this you need a counter that you increment for each new word that
+        # you will store in a new dictionary with the word as the key
+        # 2) a list of corresponding word vectors
+        # Below in the code, parts[0] is the word
+        # And np.genfromtxt(...) will give you the numpy array of word vector
+        # corresponding to the word
+        # You will use that information to construct the two data structures that
+        # I mentioned and increment your counter for each word you see.
+        # Finally, you will return both of these to the main routine.
         wordvecdict = dict()
         with open(filename,'r') as infile:
             for line in infile:
@@ -31,6 +47,12 @@ def read_data(filename):
         pass
 
 def get_sentence_in_wordvectors(sentence, wordvecdict, wordvector_length = 50, max_sentence_length = 100, zerofill = True):
+    # TODO: Change this Raphael
+    # Instead of returning the sentence with word vectors
+    # only return the list of words as integers using the mapping (dictionary)
+    # you created in the previous read_word_vectors function.
+    # Then tensorflow can lookup the corresponding word vectors automatically
+    # using tf.nn.embedding lookup or something
     sentence_in_wordvectors = np.zeros((50, 100))
     for i, word in enumerate(sentence.split()):
         sentence_in_wordvectors[:, i] = wordvecdict[word]
